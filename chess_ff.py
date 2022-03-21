@@ -266,7 +266,7 @@ def get(color, board):
                 if check( tmpBoard[ move[3] ][ move[4] ], tmpBoard ) == False:
                     king_moves.append( move )
             if len( king_moves ) == 0:
-                moves = all2(color, board, 0)
+                moves = all2(color, board)
                 if len(moves) == 0:
                     state = 2
             else:
